@@ -29,8 +29,6 @@ export default function Home() {
 
   const [isLogin, setIsLogin] = useState(false);
 
-
-
   return (
     // <div className="text-center">
     //   <h1>{count}</h1>
@@ -51,27 +49,25 @@ export default function Home() {
     //   </button>
     // </div>
 
-      // <div className="text-center">
-      //   <h1>{count}</h1>
-      //   <button
-      //     onClick={() => setCount(count / 2)}
-      //     className="p-3 m-5 bg-slate-200"
-      //   >
-      //     DECREMENT(-1)
-      //   </button>
-      //   <button onClick={() => setCount(1)} className="p-3 m-5 bg-slate-200">
-      //     RESET (1)
-      //   </button>
-      //   <button
-      //     onClick={() => setCount(count * 2)}
-      //     className="p-3 m-5 bg-slate-200"
-      //   >
-      //     INCREMENT (+1)
-      //   </button>
-      // </div>
-    
     <div>
-      h1
+      <div className="text-center">
+        <h1>{count}</h1>
+        <button
+          onClick={() => setCount(count / 2)}
+          className="p-3 m-5 bg-slate-200"
+        >
+          DECREMENT(-1)
+        </button>
+        <button onClick={() => setCount(1)} className="p-3 m-5 bg-slate-200">
+          RESET (1)
+        </button>
+        <button
+          onClick={() => setCount(count * 2)}
+          className="p-3 m-5 bg-slate-200"
+        >
+          INCREMENT (+1)
+        </button>
+      </div>
     </div>
   );
 }
